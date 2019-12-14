@@ -20,28 +20,11 @@ class App extends Component {
         );
         
     }
-    handleNavigateClick = (type) => {
-        this.fetchPostInfo();
-    }
-    fetchPostInfo = async (postId) => {
-        this.setState({
-            fetching: true // requesting..
-        });
- 
-        try {
-            // wait for two promises
-            const info = await Promise.all([
-                service.getPost(postId)
-            ]);
-            console.log(info);
- 
-        } catch(e) {
-            // if err, stop at this point
-            this.setState({
-                fetching: false
-            });
-            this.showWarning();
-        }
+    handleNavigateClick = async (type) => {
+        // await Promise.call([
+            service.getPost()
+        // ]);
+        
     }
 }
 
