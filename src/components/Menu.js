@@ -12,7 +12,7 @@ const Menu = () => {
 
         <div>
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">Song's Space </Navbar.Brand>
+                <Navbar.Brand href="#home">Song's page </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
@@ -26,10 +26,10 @@ const Menu = () => {
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Form inline>
+                    {/* <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                         <Button variant="outline-success">Search</Button>
-                    </Form>
+                    </Form> */}
                 </Navbar.Collapse>
             </Navbar>
             {/* <ul>
