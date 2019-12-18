@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-<<<<<<< HEAD
-import { Home, MyAsset, Posts, LeftMenu } from 'pages';
-=======
-import { Home, About, Posts, LeftMenu, MyAsset, Option } from 'pages';
->>>>>>> 5d877158995d8cb8b128774b1e10f54689831128
+import { Home, About, Posts, MyAsset, Option } from 'pages';
 import Menu from 'components/Menu';
 import * as service from 'services/post';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
@@ -22,13 +18,14 @@ class App extends Component {
                         </Col> */}
                         <Col md={12}>
                             <Route exact path="/" component={Home} />
-                            <Switch>
+                            {/* <Switch>
                                 <Route path="/myAsset/:name" component={MyAsset} />
                                 <Route path="/myAsset" component={MyAsset} />
-                            </Switch>
+                            </Switch> */}
                             <Route path="/posts" component={Posts} />
                             <Route path="/myAsset" component={MyAsset} />
                             <Route path="/option" component={Option} />
+                            <Route path="/about" component={About} />
                         </Col>
                     </Row>
                 </Container>
