@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Home, About, Posts, MyAsset, Option } from 'pages';
+import { Home, About, Posts, MyAsset, Option, TodoList } from 'pages';
 import Menu from 'components/Menu';
 import * as service from 'services/post';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
@@ -26,6 +26,7 @@ class App extends Component {
                             <Route path="/myAsset" component={MyAsset} />
                             <Route path="/option" component={Option} />
                             <Route path="/about" component={About} />
+                            <Route path="/todoList" component={TodoList} />
                         </Col>
                     </Row>
                 </Container>

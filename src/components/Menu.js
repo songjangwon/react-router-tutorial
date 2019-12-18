@@ -22,6 +22,7 @@ const Menu = () => {
                         <NavDropdown.Item href="/posts">Posts</NavDropdown.Item>
                             <NavDropdown.Item href="/myAsset">계좌정보</NavDropdown.Item>
                             <NavDropdown.Item href="/option">설정</NavDropdown.Item>
+                            <NavDropdown.Item href="/todoList">Todolist</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">logout</NavDropdown.Item>
 
