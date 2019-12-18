@@ -4,17 +4,20 @@ import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import ReactDataGrid from "react-data-grid";
 
 const columns = [
-    { key: "id", name: "ID", editable: true },
-    { key: "title", name: "Title", editable: true },
-    { key: "complete", name: "Complete", editable: true }
+    { key: "name", name: "종목", editable: true },
+    { key: "buyPrice", name: "매수가", editable: true },
+    { key: "currentPrice", name: "현재가", editable: true },
+    { key: "possession", name: "보유수", editable: true },
+    { key: "rate", name: "비중", editable: true }
   ];
-  
+
   const rows = [
-    { id: 0, title: "Task 1", complete: 20 },
-    { id: 1, title: "Task 2", complete: 40 },
-    { id: 2, title: "Task 3", complete: 60 }
+    { id: 0, name: "Task 1", buyPrice: 20 , currentPrice: 40, possession: 2,rate:10 },
+    { id: 1, name: "Task 2", buyPrice: 20 , currentPrice: 40, possession: 2,rate:20 },
+    { id: 2, name: "Task 3", buyPrice: 20 , currentPrice: 40, possession: 2,rate:25 },
+    { id: 3, name: "Task 4", buyPrice: 20 , currentPrice: 40, possession: 2,rate:35 },
   ];
-  
+
 class Home extends Component {
     // state = { rows };
 
