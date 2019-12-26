@@ -6,3 +6,4 @@ export { default as Grid } from './Grid';
 export { default as Option } from './Option';
 export { default as About } from './About';
 export { default as TodoList } from './TodoListPage';
+export { default as Test } from './Test';

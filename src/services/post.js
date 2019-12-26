@@ -7,7 +7,7 @@ export function getPost(postId) {
 }
 export function start_pystock(postId) {
     // return axios.get('https://jsonplaceholder.typicode.com/posts/' + postId);
-    return axios.get('http://localhost:8000/movies/1/start_pystock/');
+    return axios.get('http://localhost:8000/users/1/start_pystock/');
     
 }
 

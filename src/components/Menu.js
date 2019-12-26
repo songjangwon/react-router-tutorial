@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Form ,FormControl , Button} from 'react-bootstrap';
+import Test from '../pages/Test';
 
 
 const Menu = () => {
@@ -23,6 +24,7 @@ const Menu = () => {
                             <NavDropdown.Item href="/myAsset">계좌정보</NavDropdown.Item>
                             <NavDropdown.Item href="/option">설정</NavDropdown.Item>
                             <NavDropdown.Item href="/todoList">Todolist</NavDropdown.Item>
+                            <NavDropdown.Item href="/test">Test</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">logout</NavDropdown.Item>
 
